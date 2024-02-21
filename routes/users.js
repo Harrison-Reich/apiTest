@@ -10,7 +10,8 @@ router.get('/new', (req, res) => {
 })
 
 router.get("/:id", (req, res) => {
-    res.send('Get User with ID ${req.params.id}')
+    res.send(`Get User with ID ${req.params.id}`)
+    console.log(req.body)
 })
 
 module.exports = router

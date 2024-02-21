@@ -9,7 +9,7 @@ app.use(express.json())
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    res.render('index', { text: 'world'})
+    res.render('index', { text: 'Blake'})
 })
 
 const userRouter = require('./routes/users')
